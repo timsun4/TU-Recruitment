@@ -150,7 +150,7 @@ def main():
     print("ChapterDictionary")
     print(ChapterDictionary)
 
-    print("PNMDictionary")  `
+    print("PNMDictionary")
     print(PNMDictionary)
 
 
