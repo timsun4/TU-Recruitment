@@ -11,7 +11,10 @@ History:
 import xlrd
 import xlsxwriter
 
-participatingHouses = ["Pike", "KSig", "KA", "Lambda", "SigNu", "Sigs", "BYX"]
+spreadsheet_location = "PNM Schedule 1 Censored.xlsx"
+
+# participatingHouses = ["Pike", "KSig", "KA", "Lambda", "SigNu", "Sigs", "BYX"]
+participatingHouses = ["A", "B", "C", "D", "E", "F", "G"]
 
 # House: [Total(Functional Priority), Goal, Party 1, ... , Party n]
 ChapterDictionary = {}
@@ -37,7 +40,6 @@ Get the spreadsheet that needs to be modified
 Will need to take some sort of user input eventually, maybe same with Col Numbers
 """
 def getSpreadsheet():
-    spreadsheet_location = "Sample.xlsx"
     workbook = xlrd.open_workbook(spreadsheet_location)
     spreadsheet = workbook.sheet_by_index(0)
 
